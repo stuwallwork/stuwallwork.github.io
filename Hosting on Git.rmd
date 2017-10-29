@@ -10,6 +10,14 @@ title: "Hosting on Git"
 ##Commiting updates to github
 
 > rmarkdown::render_site()  
+
 Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.
 
-> 
+> Commit this change to github: On the Git menu click Diff and review all changes, then commit.
+
+(by default this commits to the master, but as things get more complex it is possible to commit to a branch and then review on github before merging into the master)
+
+> Push the commited changes to the master (or branch) using the green up arrow.
+
+So the order of events is, save all files, render the site, review and commit changes, push commited changes.
+
