@@ -6,6 +6,6 @@ This site contins details of some of the functionlaty and useful links I encount
 
 R studio is the IDE (Integreated Development Environment) that I am using to explore some of the basics of R, and R Markdown.
 
-R Markdown is a markup language that can be used in R Studio to create documentation that can then be presented in multiple formats, such as html in the case of this website. Here is a useful [Cheat Sheet] https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf
+R Markdown is a markup language that can be used in R Studio to create documentation that can then be presented in multiple formats, such as html in the case of this website. Here is a useful [Cheat Sheet] (https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
 
 Github seems to be a good way to host the content created using R and R Markdown.  It is great for version control and collaborative projects, and in this case was a relatively simple (several hours but not days) way to get a website up and running that is integreated with R Studio. 
