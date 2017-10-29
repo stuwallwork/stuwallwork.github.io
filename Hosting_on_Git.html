@@ -182,9 +182,6 @@ $(document).ready(function () {
   <a href="Hosting_on_Git.html">Hosting on Git</a>
 </li>
 <li>
-  <a href="Hosting_on_Git.html">Hosting on Git 2</a>
-</li>
-<li>
   <a href="R_Notebook_1.html">R Markdown Basics</a>
 </li>
 <li>
@@ -219,12 +216,17 @@ $(document).ready(function () {
 <div id="commiting-updates-to-github" class="section level2">
 <h2>Commiting updates to github</h2>
 <blockquote>
-<p>rmarkdown::render_site()<br />
-Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.</p>
+<p>rmarkdown::render_site()</p>
 </blockquote>
+<p>Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.</p>
 <blockquote>
-
+<p>Commit this change to github: On the Git menu click Diff and review all changes, then commit.</p>
 </blockquote>
+<p>(by default this commits to the master, but as things get more complex it is possible to commit to a branch and then review on github before merging into the master)</p>
+<blockquote>
+<p>Push the commited changes to the master (or branch) using the green up arrow.</p>
+</blockquote>
+<p>So the order of events is, save all files, render the site, review and commit changes, push commited changes.</p>
 </div>
 
 
