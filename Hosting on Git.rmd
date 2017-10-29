@@ -6,7 +6,7 @@ I have chosen to host this site on github, which among other things enables you 
 
 ####Useful sites for initial set up
 
-Configuring your github account and R Studio folders to host your R Markdown as html pages is easy when you know how, the links below should help with that.
+_Configuring your github account and R Studio folders to host your R Markdown as html pages is easy when you know how, the links below should help with that._
 
 Setting up Github and R Studio to host your R Markdown site on github itself [tutorial](http://nickstrayer.me/RMarkdown_Sites_tutorial/ "Hosting on git tutorial")
 
@@ -18,10 +18,10 @@ R Markdown by R Studio has a useful [page](http://rmarkdown.rstudio.com/rmarkdow
 _The order of actions required is; save all files, render the site, review and commit changes, push commited changes._
 
 1. rmarkdown::render_site()  
-*Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.*
+    *Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.*
 
-2. Commit this change to github: On the Git menu click Diff and review all changes, then commit.
-*Note: by default this commits to the master, but as things get more complex it is possible to commit to a branch and then review on github before merging into the master *
+2. Commit this change to github: On the Git menu click Diff and review all changes, then commit.  
+    *Note: by default this commits to the master, but as things get more complex it is possible to commit to a branch and then review on github before merging into the master *
 
 3. Push the commited changes to the master (or branch) using the green up arrow.
 

@@ -5,10 +5,10 @@ title: "R Basics: Part 2"
 __Part 2 of these Basic R notebooks begins to investigate some of the simple statistics that can be carried out in R __
 
 
-
 >###Contents
 + Single variable stats
 + Tables and computations
+
 
 ###Single variable stats
 
