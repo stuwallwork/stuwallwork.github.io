@@ -4,6 +4,14 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Hosting on Git"
+      href: Hosting on Git.html
+    - text: "R Markdown Basics"
+      href: R Notebook 1.html
+    - text: "Basics of R Part 1"
+      href: R Notebook - Basic R Part 1.html
+    - text: "Basics of R Part 2"
+      href: R Notebook - Basic R Part 2.html
     - text: "About"
       href: about.html
       

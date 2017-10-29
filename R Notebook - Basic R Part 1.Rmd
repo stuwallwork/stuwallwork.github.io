@@ -1,0 +1,145 @@
+---
+title: "R Notebook: Basic R Part 1"
+---
+
+__Below you will find some of the most basic functionliaty and commands available within R that as a complete novice may be useful for reference until these commands functions and techniques beocome second nature __
+
+
+
+#Contents
++ Library  
++ Objects and Variables  
++ Functions  
++ Examine imported data  
++ Save and load workspace  
++ Logical operators  
++ Subsets  
++ Export data  
+
+
+###Library
+
+- library()
+      + *views available packages*
+
+- search()
+      + *see what packages are loaded*
+
+- library('car')
+      + *loads the car package*
+
+- install.packages('stringdist')
+      + *installs a new package stringdist*
+
+
+###Objects and Variables
+
+ - x <- 1 
+      + *assign the value 1 to variable x*
+ 
+ - ls()
+      + *list objects in the workspace*
+ 
+ - rm(x)
+      + *Delete (remove) variable x from the workspace*
+ 
+ - data&newcol <- ifelse(data&existingcolumn < 10 ,"small","large")
+      + *Adds a new column to the data table that is populated based on the condition specified
+ 
+  - data<- transform(data,newcol = mean(oldcol),newcol2 = oldcol1-oldcol2,...)
+    + *transform is another way to add additional columns to your data set.
+
+###Functions
+
+- sqrt()
+      + *Resolves the square root of a number of variable*
+
+
+###Importing Data
+
+- getwd()
+      + *returns the current working directory*
+
+ - setwd('data sets')
+      + *sets the working directory to the data sets folder within the existing working directory*
+ 
+ - setwd('..')
+      + *sets the working directory one level up from the existing working directory*
+ 
+ - list.files('data sets')
+      + *lists the files contained in the specified folder within the working directory*
+ 
+ - read.csv()
+ 
+      + *Reads.csv files using the utils (default) package*
+ 
+ - read.table()
+      + *other delimited formats using the utils (default) package*
+   
+ - read.WorksheetFromFile()
+      + *.xls and .xlsx files using the XLConnect package*
+    
+    
+###Examine imported data
+
+**First name the data set: mydata<-read.csv('dataset.csv')**
+
+- class(mydata)
+      + *returns the class of the loaded data, usually this would be expected to be a data.frame.  This is a list of vectors or equal length (much like a table in excel)*
+
+- dim(mydata)
+      + *returns the number of rows and columns*
+
+- names(mydata)
+      + *returns the first 10 column names*
+
+- str(mydata)
+      + *returns details baout the first 5 columns*
+
+###Save and load workspace
+
+ - Saveing the workspace will save all objects in the workspace to a specified folder location:
+ 
+    1. ls() 
+     + *list the objects in the workspace that you are about to save*
+    
+    2. save.image(file='workspacename.RData') 
+     + *save the workspace as an RData file this will save all objects listed above*
+    
+    3. rm(list=ls()) 
+     + *remove all objects from the workspace*
+    
+ - Load a workspace (RData file) 
+ 
+    1. Load('workspacename.RData') 
+     + *Loads the workspace 'workspacename' from your current working directory*
+    
+    2. ls() 
+     + *list objects in the workspace*
+
+###Logical Operators
+* '==' equal to  
+* '!=' not equal to  
+* '>' greater than  
+* '<' less than  
+* '>=' greater than or equal to   
+* '<=' less than or equal to  
+* '&' and  
+* '|' or
+  
+  
+### Subsets
+
+* subset(dataset,subset = columnA > 100, select = c('columnA','columnB'))
+      + *This will return the subsed of the dataset where the values in column A are greater than 100 and where the column names are columnA or columnB.*
+      
+* data <- subset(data, select = c('colA','colB')) 
+      +  *Updates the data set to contain only the subset described.*
+      
+###Export Data
+
+* write.csv(data, file = 'data.csv')
+
+      + *exports the data set to data.csv in the current work space*
+      
+      

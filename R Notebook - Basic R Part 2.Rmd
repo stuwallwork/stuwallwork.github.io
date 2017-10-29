@@ -1,0 +1,46 @@
+---
+title: "R Notebook: Basic R Part 2"
+---
+
+__Part 2 of these Basic R notebooks begins to investigate some of the simple statistics that can be carried out in R __
+
+
+
+#Contents
++ Single variable stats
++ Tables and computations
+
+###Single variable stats
+
+*In the examples below 'var1' is a single variable defined from a data.frame (in other words var1 is one column of data) *
+
+* var1
+    + executing the variable name will return the list of values for var1 in the data set
+    
+* mean(var1)
+    + returns the mean of the var1 as a single value
+
+* sd(var1)
+    + returns the standard deviation of the var1 as a single value
+    
+*summary(var1)
+    + returns the min, 1st 2nd (median) and 3rd quartiles, the max and the mean.
+    + the summary function will accept multiple variables and return the summary stats for each
+    
+###Tables and computations
+
+* Single category table  
+    + Table <- table(datacolumn)  
+      *The table function will store the count of each unique item in the column*  
+* Crosstabs  
+    + crosstab <- table(datacol1,datacol2)  
+    *creates a summary crosstab of the counts of 2 variables*   
+    + 3vartable<- table(datacol1,datacol2,datacol3)  
+    *creates the same crosstab with the first 2 variables and splits into sections based on the 3rd variable*  
+    
+
+    
+
+  
+  
+    

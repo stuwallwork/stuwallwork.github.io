@@ -11,7 +11,7 @@
 
 
 
-<title>About This Website</title>
+<title>R Notebook: Basic R Part 2</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -205,12 +205,57 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About This Website</h1>
+<h1 class="title toc-ignore">R Notebook: Basic R Part 2</h1>
 
 </div>
 
 
-<p>More about this website.</p>
+<p><strong>Part 2 of these Basic R notebooks begins to investigate some of the simple statistics that can be carried out in R </strong></p>
+<div id="contents" class="section level1">
+<h1>Contents</h1>
+<ul>
+<li>Single variable stats</li>
+<li>Tables and computations</li>
+</ul>
+<div id="single-variable-stats" class="section level3">
+<h3>Single variable stats</h3>
+<p><em>In the examples below ‘var1’ is a single variable defined from a data.frame (in other words var1 is one column of data) </em></p>
+<ul>
+<li>var1
+<ul>
+<li>executing the variable name will return the list of values for var1 in the data set</li>
+</ul></li>
+<li>mean(var1)
+<ul>
+<li>returns the mean of the var1 as a single value</li>
+</ul></li>
+<li>sd(var1)
+<ul>
+<li>returns the standard deviation of the var1 as a single value</li>
+</ul></li>
+</ul>
+<p>*summary(var1) + returns the min, 1st 2nd (median) and 3rd quartiles, the max and the mean. + the summary function will accept multiple variables and return the summary stats for each</p>
+</div>
+<div id="tables-and-computations" class="section level3">
+<h3>Tables and computations</h3>
+<ul>
+<li>Single category table
+<ul>
+<li>Table &lt;- table(datacolumn)<br />
+<em>The table function will store the count of each unique item in the column</em><br />
+</li>
+</ul></li>
+<li>Crosstabs
+<ul>
+<li>crosstab &lt;- table(datacol1,datacol2)<br />
+<em>creates a summary crosstab of the counts of 2 variables</em><br />
+</li>
+<li>3vartable&lt;- table(datacol1,datacol2,datacol3)<br />
+<em>creates the same crosstab with the first 2 variables and splits into sections based on the 3rd variable</em></li>
+</ul></li>
+</ul>
+</div>
+</div>
 
 
 

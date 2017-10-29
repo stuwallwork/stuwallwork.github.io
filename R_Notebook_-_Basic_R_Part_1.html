@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>R Notebook: Basic R Part 1</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">My Website</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Hosting on Git.html">Hosting on Git</a>
+</li>
+<li>
+  <a href="R Notebook 1.html">R Markdown Basics</a>
+</li>
+<li>
+  <a href="R Notebook - Basic R Part 1.html">Basics of R Part 1</a>
+</li>
+<li>
+  <a href="R Notebook - Basic R Part 2.html">Basics of R Part 2</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">R Notebook: Basic R Part 1</h1>
+
+</div>
+
+
+<p><strong>Below you will find some of the most basic functionliaty and commands available within R that as a complete novice may be useful for reference until these commands functions and techniques beocome second nature </strong></p>
+<div id="contents" class="section level1">
+<h1>Contents</h1>
+<ul>
+<li>Library<br />
+</li>
+<li>Objects and Variables<br />
+</li>
+<li>Functions<br />
+</li>
+<li>Examine imported data<br />
+</li>
+<li>Save and load workspace<br />
+</li>
+<li>Logical operators<br />
+</li>
+<li>Subsets<br />
+</li>
+<li>Export data</li>
+</ul>
+<div id="library" class="section level3">
+<h3>Library</h3>
+<ul>
+<li>library()
+<ul>
+<li><em>views available packages</em></li>
+</ul></li>
+<li>search()
+<ul>
+<li><em>see what packages are loaded</em></li>
+</ul></li>
+<li>library(‘car’)
+<ul>
+<li><em>loads the car package</em></li>
+</ul></li>
+<li>install.packages(‘stringdist’)
+<ul>
+<li><em>installs a new package stringdist</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="objects-and-variables" class="section level3">
+<h3>Objects and Variables</h3>
+<ul>
+<li>x &lt;- 1
+<ul>
+<li><em>assign the value 1 to variable x</em></li>
+</ul></li>
+<li>ls()
+<ul>
+<li><em>list objects in the workspace</em></li>
+</ul></li>
+<li>rm(x)
+<ul>
+<li><em>Delete (remove) variable x from the workspace</em></li>
+</ul></li>
+<li>data&amp;newcol &lt;- ifelse(data&amp;existingcolumn &lt; 10 ,“small”,“large”)
+<ul>
+<li>*Adds a new column to the data table that is populated based on the condition specified</li>
+</ul></li>
+<li>data&lt;- transform(data,newcol = mean(oldcol),newcol2 = oldcol1-oldcol2,…)
+<ul>
+<li>*transform is another way to add additional columns to your data set.</li>
+</ul></li>
+</ul>
+</div>
+<div id="functions" class="section level3">
+<h3>Functions</h3>
+<ul>
+<li>sqrt()
+<ul>
+<li><em>Resolves the square root of a number of variable</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="importing-data" class="section level3">
+<h3>Importing Data</h3>
+<ul>
+<li>getwd()
+<ul>
+<li><em>returns the current working directory</em></li>
+</ul></li>
+<li>setwd(‘data sets’)
+<ul>
+<li><em>sets the working directory to the data sets folder within the existing working directory</em></li>
+</ul></li>
+<li>setwd(‘..’)
+<ul>
+<li><em>sets the working directory one level up from the existing working directory</em></li>
+</ul></li>
+<li>list.files(‘data sets’)
+<ul>
+<li><em>lists the files contained in the specified folder within the working directory</em></li>
+</ul></li>
+<li><p>read.csv()</p>
+<ul>
+<li><em>Reads.csv files using the utils (default) package</em></li>
+</ul></li>
+<li>read.table()
+<ul>
+<li><em>other delimited formats using the utils (default) package</em></li>
+</ul></li>
+<li>read.WorksheetFromFile()
+<ul>
+<li><em>.xls and .xlsx files using the XLConnect package</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="examine-imported-data" class="section level3">
+<h3>Examine imported data</h3>
+<p><strong>First name the data set: mydata&lt;-read.csv(‘dataset.csv’)</strong></p>
+<ul>
+<li>class(mydata)
+<ul>
+<li><em>returns the class of the loaded data, usually this would be expected to be a data.frame. This is a list of vectors or equal length (much like a table in excel)</em></li>
+</ul></li>
+<li>dim(mydata)
+<ul>
+<li><em>returns the number of rows and columns</em></li>
+</ul></li>
+<li>names(mydata)
+<ul>
+<li><em>returns the first 10 column names</em></li>
+</ul></li>
+<li>str(mydata)
+<ul>
+<li><em>returns details baout the first 5 columns</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="save-and-load-workspace" class="section level3">
+<h3>Save and load workspace</h3>
+<ul>
+<li><p>Saveing the workspace will save all objects in the workspace to a specified folder location:</p>
+<ol style="list-style-type: decimal">
+<li>ls()</li>
+</ol>
+<ul>
+<li><em>list the objects in the workspace that you are about to save</em></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>save.image(file=‘workspacename.RData’)</li>
+</ol>
+<ul>
+<li><em>save the workspace as an RData file this will save all objects listed above</em></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>rm(list=ls())</li>
+</ol>
+<ul>
+<li><em>remove all objects from the workspace</em></li>
+</ul></li>
+<li><p>Load a workspace (RData file)</p>
+<ol style="list-style-type: decimal">
+<li>Load(‘workspacename.RData’)</li>
+</ol>
+<ul>
+<li><em>Loads the workspace ‘workspacename’ from your current working directory</em></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>ls()</li>
+</ol>
+<ul>
+<li><em>list objects in the workspace</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="logical-operators" class="section level3">
+<h3>Logical Operators</h3>
+<ul>
+<li>‘==’ equal to<br />
+</li>
+<li>‘!=’ not equal to<br />
+</li>
+<li>‘&gt;’ greater than<br />
+</li>
+<li>‘&lt;’ less than<br />
+</li>
+<li>‘&gt;=’ greater than or equal to<br />
+</li>
+<li>‘&lt;=’ less than or equal to<br />
+</li>
+<li>‘&amp;’ and<br />
+</li>
+<li>‘|’ or</li>
+</ul>
+</div>
+<div id="subsets" class="section level3">
+<h3>Subsets</h3>
+<ul>
+<li>subset(dataset,subset = columnA &gt; 100, select = c(‘columnA’,‘columnB’))
+<ul>
+<li><em>This will return the subsed of the dataset where the values in column A are greater than 100 and where the column names are columnA or columnB.</em></li>
+</ul></li>
+<li>data &lt;- subset(data, select = c(‘colA’,‘colB’))
+<ul>
+<li><em>Updates the data set to contain only the subset described.</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="export-data" class="section level3">
+<h3>Export Data</h3>
+<ul>
+<li><p>write.csv(data, file = ‘data.csv’)</p>
+<ul>
+<li><em>exports the data set to data.csv in the current work space</em></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

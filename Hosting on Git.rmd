@@ -1,0 +1,12 @@
+---
+title: "Hosting on Git"
+---
+
+##Useful sites for initial set up
+
+
+
+
+##Commiting updates to github
+
+> rmarkdown::render_site()
