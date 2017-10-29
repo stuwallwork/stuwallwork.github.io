@@ -6,6 +6,8 @@ navbar:
       href: index.html
     - text: "Hosting on Git"
       href: Hosting_on_Git.html
+    - text: "Hosting on Git 2"
+      href: Hosting_on_Git.html
     - text: "R Markdown Basics"
       href: R_Notebook_1.html
     - text: "Basics of R Part 1"
