@@ -8,9 +8,9 @@ I have chosen to host this site on github, which among other things enables you 
 
 _Configuring your github account and R Studio folders to host your R Markdown as html pages is easy when you know how, the links below should help with that._
 
-Setting up Github and R Studio to host your R Markdown site on github itself [tutorial](http://nickstrayer.me/RMarkdown_Sites_tutorial/ "Hosting on git tutorial")
+Setting up Github and R Studio to host your R Markdown website has loads of tutorials, [here is a good one](http://nickstrayer.me/RMarkdown_Sites_tutorial/ "Hosting on git tutorial") Check out [YouTube](https://www.youtube.com/results?search_query=github+hosting+r+markdown) too!
 
-R Markdown by R Studio has a useful [page](http://rmarkdown.rstudio.com/rmarkdown_websites.html "R Markdown - R Studio") 
+[R Markdown by R Studio](http://rmarkdown.rstudio.com/rmarkdown_websites.html "R Markdown - R Studio") 
 
 
 ####Commiting updates to github
