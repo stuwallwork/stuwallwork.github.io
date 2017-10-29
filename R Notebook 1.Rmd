@@ -23,3 +23,24 @@ Column 1  | Column2  | Column 3
 Entry 1   |Entry 2    | Entry 3
 Entry 1   |Entry 2    | Entry 3
 Entry 1   |Entry 2    | Entry 3
+
+### Example Hyperlinks
+
+
+[I'm an inline-style link](https://www.google.com/blogger)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://www.google.com/News
+[1]: https://www.google.com/maps
+[link text itself]: https://www.google.com/translate

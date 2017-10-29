@@ -3,31 +3,9 @@ title: "Hosting on Git"
 ---
 
 ##Useful sites for initial set up
+Configuring your github account and R Studio folders to host your R Markdown as html pages is easy when you know how, the links below should help with that.
 
-* [R Markdown site on git tutorial]
-
-[R Markdown site on git tutorial linked 2]:(http://nickstrayer.me/RMarkdown_Sites_tutorial/)
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-
-
+[R Markdown site on git](http://nickstrayer.me/RMarkdown_Sites_tutorial/ "Hosting on git tutorial")
 
 
 
