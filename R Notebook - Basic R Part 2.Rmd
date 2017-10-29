@@ -6,7 +6,7 @@ __Part 2 of these Basic R notebooks begins to investigate some of the simple sta
 
 
 
-#Contents
+>###Contents
 + Single variable stats
 + Tables and computations
 

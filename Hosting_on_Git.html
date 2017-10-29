@@ -210,26 +210,22 @@ $(document).ready(function () {
 </div>
 
 
-<div id="i-have-chosen-to-host-this-site-on-github-which-among-other-things-enables-you-to-use-r-and-r-markdown-from-within-r-studio-to-produce-the-content-you-see-here.-set-up-was-straight-forward-enough-below-are-some-of-the-useful-things-i-learned-and-links-i-used-during-set-up." class="section level2">
-<h2>I have chosen to host this site on github, which among other things enables you to use R and R Markdown from within R Studio to produce the content you see here. Set up was straight forward enough, below are some of the useful things I learned and links I used during set up.</h2>
-<div id="useful-sites-for-initial-set-up" class="section level3">
-<h3>Useful sites for initial set up</h3>
+<p>I have chosen to host this site on github, which among other things enables you to use R and R Markdown from within R Studio to produce the content you see here. Set up was straight forward enough, below are some of the useful things I learned and links I used during set up.</p>
+<div id="useful-sites-for-initial-set-up" class="section level4">
+<h4>Useful sites for initial set up</h4>
 <p>Configuring your github account and R Studio folders to host your R Markdown as html pages is easy when you know how, the links below should help with that.</p>
 <p>Setting up Github and R Studio to host your R Markdown site on github itself <a href="http://nickstrayer.me/RMarkdown_Sites_tutorial/" title="Hosting on git tutorial">tutorial</a></p>
 <p>R Markdown by R Studio has a useful <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html" title="R Markdown - R Studio">page</a></p>
 </div>
-<div id="commiting-updates-to-github" class="section level3">
-<h3>Commiting updates to github</h3>
-<blockquote>
-<p><em>The order of actions required is, save all files, render the site, review and commit changes, push commited changes.</em></p>
-</blockquote>
+<div id="commiting-updates-to-github" class="section level4">
+<h4>Commiting updates to github</h4>
+<p><em>The order of actions required is; save all files, render the site, review and commit changes, push commited changes.</em></p>
 <ol style="list-style-type: decimal">
 <li><p>rmarkdown::render_site()<br />
 <em>Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.</em></p></li>
 <li><p>Commit this change to github: On the Git menu click Diff and review all changes, then commit. <em>Note: by default this commits to the master, but as things get more complex it is possible to commit to a branch and then review on github before merging into the master </em></p></li>
 <li><p>Push the commited changes to the master (or branch) using the green up arrow.</p></li>
 </ol>
-</div>
 </div>
 
 

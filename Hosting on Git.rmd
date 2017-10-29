@@ -3,8 +3,8 @@ title: "Hosting on Github"
 ---
 
 I have chosen to host this site on github, which among other things enables you to use R and R Markdown from within R Studio to produce the content you see here.  Set up was straight forward enough, below are some of the useful things I learned and links I used during set up.
----------
-###Useful sites for initial set up
+
+####Useful sites for initial set up
 
 Configuring your github account and R Studio folders to host your R Markdown as html pages is easy when you know how, the links below should help with that.
 
@@ -13,9 +13,9 @@ Setting up Github and R Studio to host your R Markdown site on github itself [tu
 R Markdown by R Studio has a useful [page](http://rmarkdown.rstudio.com/rmarkdown_websites.html "R Markdown - R Studio") 
 
 
-###Commiting updates to github
+####Commiting updates to github
 
-> _The order of actions required is, save all files, render the site, review and commit changes, push commited changes._
+_The order of actions required is; save all files, render the site, review and commit changes, push commited changes._
 
 1. rmarkdown::render_site()  
 *Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.*
