@@ -9,4 +9,7 @@ title: "Hosting on Git"
 
 ##Commiting updates to github
 
-> rmarkdown::render_site()
+> rmarkdown::render_site()  
+Creates an html file from each rmd file in the directory, a _ at the strart of a filename will exclude that file from this process.
+
+> 
