@@ -1,5 +1,5 @@
 ---
-title: "R Notebook: Basic R Part 1"
+title: "R Basics: Part 1"
 ---
 
 __Below you will find some of the most basic functionliaty and commands available within R that as a complete novice may be useful for reference until these commands functions and techniques beocome second nature __

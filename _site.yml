@@ -1,16 +1,16 @@
-name: "my-website"
+name: "Getting to grips with R"
 navbar:
-  title: "My Website"
+  title: "Getting to grips with R"
   left:
     - text: "Home"
       href: index.html
-    - text: "Hosting on Git"
+    - text: "Hosting on Github"
       href: Hosting_on_Git.html
     - text: "R Markdown Basics"
       href: R_Notebook_1.html
-    - text: "Basics of R Part 1"
+    - text: "R Basics Part 1"
       href: R_Notebook_-_Basic_R_Part_1.html
-    - text: "Basics of R Part 2"
+    - text: "R Basics Part 2"
       href: R_Notebook_-_Basic_R_Part_2.html
     - text: "About"
       href: about.html
