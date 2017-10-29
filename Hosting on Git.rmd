@@ -4,7 +4,9 @@ title: "Hosting on Git"
 
 ##Useful sites for initial set up
 
-* [R Markdown site on git tutorial linked 2]:(http://nickstrayer.me/RMarkdown_Sites_tutorial/)
+* [R Markdown site on git tutorial]
+
+[R Markdown site on git tutorial linked 2]:(http://nickstrayer.me/RMarkdown_Sites_tutorial/)
 
 [I'm an inline-style link](https://www.google.com)
 
@@ -41,5 +43,5 @@ Some text to show that the reference links can follow later.
 
 > Push the commited changes to the master (or branch) using the green up arrow.
 
-    *So the order of events is, save all files, render the site, review and commit changes, push commited changes.*
+    *So the order of actions required is, save all files, render the site, review and commit changes, push commited changes.*
 
