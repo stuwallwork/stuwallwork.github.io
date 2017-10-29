@@ -4,7 +4,7 @@ title: "Hosting on Git"
 
 ##Useful sites for initial set up
 
-* [R Markdown site on git tutorial linked] (http://nickstrayer.me/RMarkdown_Sites_tutorial/)
+* [R Markdown site on git tutorial linked]: (http://nickstrayer.me/RMarkdown_Sites_tutorial/)
 
 
 
